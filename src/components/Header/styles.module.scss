@@ -1,0 +1,23 @@
+@import "../../styles/imports.scss";
+
+.container {
+  width: 100%;
+  background-color: $gray900;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 240px;
+
+  .subcontainer {
+    display: flex;
+    gap: 45px;
+    div {
+      display: flex;
+      align-items: center;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}

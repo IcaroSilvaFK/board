@@ -1,0 +1,54 @@
+@import "../../styles/imports.scss";
+.container {
+  background-color: $inputBackground;
+
+  border-radius: 5px;
+  padding: 6px 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.containerTask {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  p {
+    line-height: 150%;
+    width: 450px;
+  }
+  overflow-y: auto;
+}
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    color: #fff;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    span {
+      font-size: 12px;
+    }
+  }
+}
+.containerDate {
+  color: $yellow;
+
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  span {
+    font-size: 13px;
+  }
+}

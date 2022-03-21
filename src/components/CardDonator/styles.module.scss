@@ -1,0 +1,26 @@
+@import "../../styles/imports.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px 10px;
+
+  background-color: $gray900;
+
+  width: 615px;
+
+  margin: auto;
+
+  border-radius: 10px;
+
+  h1 {
+    color: $yellow;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+  }
+}

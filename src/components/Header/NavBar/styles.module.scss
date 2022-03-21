@@ -1,0 +1,23 @@
+@import "../../../styles/imports.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    li {
+      display: flex;
+      align-items: center;
+      a {
+        color: $gray100;
+        transition: filter 0.3s;
+        &:hover {
+          filter: brightness(0.7);
+        }
+      }
+    }
+  }
+}

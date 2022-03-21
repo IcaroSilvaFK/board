@@ -1,0 +1,22 @@
+@import "../../styles/imports.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  background-color: transparent;
+  color: $gray100;
+}
+
+.containerLogged {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: $gray100;
+  gap: 10px;
+  img {
+    border-radius: 50%;
+  }
+}
