@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 
 export const LoginButton: FC = () => {
   const { data: session } = useSession();
-  console.log(session);
+
   if (session) {
     return (
       <button className={styles.containerLogged}>
@@ -18,8 +18,8 @@ export const LoginButton: FC = () => {
           width={40}
           height={40}
         />
-        <span>Olá {session.user?.name}</span>
-        <IoMdClose onClick={() => signOut()} size={20 } />
+        <span>Olá {session.user?.name?.split(" ")[0]}</span>
+        <IoMdClose onClick={() => signOut()} size={20} />
       </button>
     );
   }

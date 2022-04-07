@@ -1,9 +1,8 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
 import ImagePc from "../assets/pc.svg";
-import Logo from "../assets/logomaior.svg";
 
 import { Header } from "../components/Header";
 
@@ -44,6 +43,13 @@ const Home: NextPage = () => {
       </main>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+    revalidate: 60 * 60, //1 hour
+  };
 };
 
 export default Home;
